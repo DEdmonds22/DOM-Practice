@@ -8,7 +8,7 @@
         + Change the style properties of elements
 */
 
-// Selecting DOM Elements
+// SELECTING DOM ELEMENTS
 /*
     - Web devs make web pages dynamic by manipulating the DOM. For ex:
         + In a To Do app, the user types a new todo into an input, clicks a button and the new todo is added to the list.
@@ -19,3 +19,9 @@
         + Append the new element to its parent
     - Devs must use JS to select DOM elements so that the above steps can be performed.
 */
+
+// SELECT A SINGLE ELEMENT BY ITS ID
+/* The getElementByID method is the most efficient way to select a DOM element if it has an id assigned to it */
+const titleEl = document.getElementById("title");
+    /* NOTE: unlike in CSS, we do not put a # in frt of the id when using getElementById */
+    /* If you'd like to be able to explore the properties of element, use console.dir() instead */
