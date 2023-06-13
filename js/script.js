@@ -47,3 +47,12 @@ pEL.innerHTML = "Comments for <strong>Today</strong>";      // the strong tags a
     /* So, as you saw, if you want to include HTML in the content, use innerHTML */
     /* The power of innerHTML may not be obvious, but consider the string can be as complex as you want - containing multiple elements w/ attributes, etc. */
     /* However, using textContent is more efficient if just setting text. */
+
+// Change the style of an element
+    /* DOM elements have a style property that can be used to set CSS styling! */
+    /* This is how we can set the text-align CSS property of our title: */
+titleEl.style.textAlign = 'center';     // if in CSS -> text-align: center;
+titleEl.style.color = 'green';
+    /*  */
+    /*  */
+    /*  */
