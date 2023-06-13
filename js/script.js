@@ -22,7 +22,7 @@
 
 // SELECT A SINGLE ELEMENT BY ITS ID
     /* The getElementByID method is the most efficient way to select a DOM element if it has an id assigned to it */
-const titleEl = document.getElementById("title");
+let titleEl = document.getElementById("title");
     /* NOTE: unlike in CSS, we do not put a # in frt of the id when using getElementById */
     /* If you'd like to be able to explore the properties of element, use console.dir() instead */
 
@@ -33,3 +33,6 @@ const titleEl = document.getElementById("title");
     /* Knowing that the selecotr provided to querySelector(selector) follows the rule of CSS3 selectors, how could we modify our code to select our <h1> element by its id? */
     /* If the CSS selector provided to querySelector() matches multiple elements, it returns the "first" matching element. */
     /* If no matching node is found, null is returned. */
+
+// PRACTICE
+let pEL = document.querySelector("p");  // selects the first element w/ a class of cool and assigns it to a variable named pEL
