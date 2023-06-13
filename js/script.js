@@ -30,9 +30,20 @@ let titleEl = document.getElementById("title");
     /* The solution is to use the querySelector(selector) method that is avalible on the document object (and elements themselves) */
     /* The selector argument is a string that follows the rules of regular CSS3 selectors */
     /* The CSS3 selector lang offers amazing power to target elements for selection! */
-    /* Knowing that the selecotr provided to querySelector(selector) follows the rule of CSS3 selectors, how could we modify our code to select our <h1> element by its id? */
+    /* Knowing that the selector provided to querySelector(selector) follows the rule of CSS3 selectors, how could we modify our code to select our <h1> element by its id? */
     /* If the CSS selector provided to querySelector() matches multiple elements, it returns the "first" matching element. */
     /* If no matching node is found, null is returned. */
 
 // PRACTICE
 let pEL = document.querySelector("p");  // selects the first element w/ a class of cool and assigns it to a variable named pEL
+
+// CHANGE THE CONTENT OF AN ELEMENT
+    /* By inspecting the properties of a DOM element in the console, we will find a couple of properties that we can use to read and set its content:
+        + innerHtml - Used to retrieve/set content ad HTML
+        + textContent - Used to retrieve/se content as plain text */
+    /* Let's check out the content of the <p> element by assigning the string Comments for <strong>Today</strong> first to textContent, then to innerHTML. */
+pEL.textContent = "Comments for <strong>Today</strong>";    // the strong tags show as text instead of bold the string "Today"
+pEL.innerHTML = "Comments for <strong>Today</strong>";      // the strong tags are recgonized as tags, so the string "Today" is bolded
+    /* So, as you saw, if you want to include HTML in the content, use innerHTML */
+    /* The power of innerHTML may not be obvious, but consider the string can be as complex as you want - containing multiple elements w/ attributes, etc. */
+    /* However, using textContent is more efficient if just setting text. */
