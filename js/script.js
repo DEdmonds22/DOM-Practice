@@ -82,3 +82,6 @@ aEL.setAttribute("href", "https://www.google.com");
         + Like querySelector, the querySelectorAll(selector) method uses the power of CSS3 selectors to specify which DOM elements we want returned.
         + It selects all DOM elements that match the selector.
         + By itself, querySelectorAll actually provides all the DOM selection power a web dev needs! */
+
+// SELECT MULTIPLE ELEMENTS WITH QUERYSELECTORALL
+    const commentEls = document.querySelectorAll('.comment');
