@@ -60,3 +60,7 @@ titleEl.style.color = 'green';          // if in CSS -> color: green;
         + getAttribute(name) - this method of Element interface returns the value of a specified attribute on the element. "name" is the name of the attribute whose value you want to get.
         + setAttribute(name, value) - this method sets the value of an attribute on the specified element. if the attribute already exists, the value is updated; otherwise a new attribute is add w/ the specified name and value. 
         + hasAttribute(name) - this method returns a Boolean value indicating whether the specified element has the specified attribute or not */
+
+// PRACTICE - ATTRIBUTES OF AN ELEMENT
+let aEL = document.querySelector('a');
+aEL.setAttribute("href", "https://www.google.com");
