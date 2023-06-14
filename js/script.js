@@ -90,5 +90,19 @@ aEL.setAttribute("href", "https://www.google.com");
     /* In summary, use the following to help you decide with method to use to select DOM elements:
         + getElementById: use when you need to select a single element that has an id assigned to it.
         + querySelector: use when you need to select a single element does not have an id.
-        + querySelectorAll: use when you need to select multiple elements.
-    */
+        + querySelectorAll: use when you need to select multiple elements. */
+
+// ITERATING OVER A COLLECTION OF ELEMENTS
+    /* querySelectorALl returns an arry-like object called a NodeList. */
+    /* There are three approaches we can use to iterate over the elements in a NodeList:
+        + A regular for loop - work, but its not as readable or elegant...
+        + The forEach method. A good option when you want to iterate through all elements and also want to access the index of the iteration.
+        + A for of loop - elegant and allows early exit of the loop w/ the break statement, however, doen't have access to an index (although you could track indexes manually by initializing a separate variable before the loop and incrementing it within the loop). 
+        + Let's type this for...of loop in the console to log each element: */
+for (let commentEl of commentEls) {
+    console.log(commentEl);
+}
+
+for (let commentEl of commentEls) {     // changes the font size of all the comment elements to 30px
+    commentEl.style.fontSize = "30px";
+}
