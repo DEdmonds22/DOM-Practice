@@ -85,3 +85,10 @@ aEL.setAttribute("href", "https://www.google.com");
 
 // SELECT MULTIPLE ELEMENTS WITH QUERYSELECTORALL
     const commentEls = document.querySelectorAll('.comment');
+
+// DOM SELECTION SUMMARY
+    /* In summary, use the following to help you decide with method to use to select DOM elements:
+        + getElementById: use when you need to select a single element that has an id assigned to it.
+        + querySelector: use when you need to select a single element does not have an id.
+        + querySelectorAll: use when you need to select multiple elements.
+    */
