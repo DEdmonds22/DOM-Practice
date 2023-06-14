@@ -73,3 +73,12 @@ aEL.setAttribute("href", "https://www.google.com");
         + toggle(className) - this method of the DOMTokenList interface removes an existing token from the list and returns false. if the token doesn't exist it's added and the function returns true.
         + contains(className) - this method of DOMTokenList interface returns a boolean value - true if the underlying list contains the given token, otherwise false. Think of this like a light switch.
         + replace(oldClass, newClass) - this method of the DOMTokenList interface replaces an existing token w/ a new token. if the first token doesn't exist, replace() turns false immediately, w/o adding the new token to the token list. */
+
+// SELECTING MULTIPLE ELEMENTS
+    /* The following methods can be used to select multiple elements:
+        + getElementsByTagName(namesString) -  this method returns a live HTMLCollection of elements with the given tag name.
+        + getElementsByClassName(namesString) - this method returns a live HTMLCollection which contains every descendant element which has the specified class name or names.
+        + Although it's pretty cool that the returned list is automatically updated to include/exclude DOM elements as the DOM is updated, the above methods are not as flexible as the querySelectorAll method 
+        + Like querySelector, the querySelectorAll(selector) method uses the power of CSS3 selectors to specify which DOM elements we want returned.
+        + It selects all DOM elements that match the selector.
+        + By itself, querySelectorAll actually provides all the DOM selection power a web dev needs! */
