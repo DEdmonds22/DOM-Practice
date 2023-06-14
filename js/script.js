@@ -48,11 +48,15 @@ pEL.innerHTML = "Comments for <strong>Today</strong>";      // the strong tags a
     /* The power of innerHTML may not be obvious, but consider the string can be as complex as you want - containing multiple elements w/ attributes, etc. */
     /* However, using textContent is more efficient if just setting text. */
 
-// Change the style of an element
+// CHANGE THE STYLE OF AN ELEMENT
     /* DOM elements have a style property that can be used to set CSS styling! */
     /* This is how we can set the text-align CSS property of our title: */
 titleEl.style.textAlign = 'center';     // if in CSS -> text-align: center;
-titleEl.style.color = 'green';
-    /*  */
-    /*  */
-    /*  */
+titleEl.style.color = 'green';          // if in CSS -> color: green;
+
+// ATTRIBUTES OF AN ELEMENT
+    /* You may need to get, set, or check if an element has a certain attribute */
+    /* Here are a few of the methods that the Element API (application programming interface) has for working w/ an element's attributes:
+        + getAttribute(name) - this method of Element interface returns the value of a specified attribute on the element. "name" is the name of the attribute whose value you want to get.
+        + setAttribute(name, value) - this method sets the value of an attribute on the specified element. if the attribute already exists, the value is updated; otherwise a new attribute is add w/ the specified name and value. 
+        + hasAttribute(name) - this method returns a Boolean value indicating whether the specified element has the specified attribute or not */
