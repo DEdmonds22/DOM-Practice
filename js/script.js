@@ -64,3 +64,12 @@ titleEl.style.color = 'green';          // if in CSS -> color: green;
 // PRACTICE - ATTRIBUTES OF AN ELEMENT
 let aEL = document.querySelector('a');
 aEL.setAttribute("href", "https://www.google.com");
+
+// ATTRIBUTES OF AN ELEMENT - CLASSES
+    /* Technically, you could use those attribute methods we saw to work w/ an element's classes */
+    /* However, the classList property offers a better approach. It's an object w. the following methods pertaining to claases:
+        + add(className, className, ...) - this method of the DOMTokenList interface adds the gien token(s) to the list, omitting any that are present.
+        + remove(className, className, ...) - this method of the DOMTokenList interface removes the specified token(s) from the list.
+        + toggle(className) - this method of the DOMTokenList interface removes an existing token from the list and returns false. if the token doesn't exist it's added and the function returns true.
+        + contains(className) - this method of DOMTokenList interface returns a boolean value - true if the underlying list contains the given token, otherwise false. Think of this like a light switch.
+        + replace(oldClass, newClass) - this method of the DOMTokenList interface replaces an existing token w/ a new token. if the first token doesn't exist, replace() turns false immediately, w/o adding the new token to the token list. */
